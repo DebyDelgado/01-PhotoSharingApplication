@@ -8,6 +8,7 @@ namespace MVCPhotoAPP.Models
 {
     public class PhotoSharingContext : DbContext
     {
+        public PhotoSharingContext(): base("PhotoSharingDB") { }
         public DbSet<Photo> Photos {get; set;}
         public DbSet<Comment> Comments { get; set; }
 
