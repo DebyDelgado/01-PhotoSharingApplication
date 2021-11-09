@@ -33,11 +33,12 @@ namespace MVCPhotoAPP.Models
                     Title="Test Photo",
                     Description = "Your Description",
                     UserName = "NaokiSato",
-                    PhotoFile = getFileBytes("\\Images\\flower.jpg"),
+                    PhotoFile = getFileBytes("\\Images\\shinnoi.jpg"),
                     ImageMimeType = "image/jpeg",
                     CreatedDate = DateTime.Today }
                 };
-
+            photos.ForEach(p => context.Photos.Add(p));
+            context.SaveChanges();
             var comments = new List<Comment>
             {
                 new Comment
@@ -52,6 +53,7 @@ namespace MVCPhotoAPP.Models
 
             comments.ForEach(s => context.Comments.Add(s));
             context.SaveChanges();
+
         }
 
     }
