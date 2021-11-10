@@ -1,0 +1,112 @@
+﻿body {
+    background-color:thistle;
+    font-weight: 300;
+    color: black;
+}
+
+.site-page-title {
+    float: left;
+    width: 600px;
+}
+
+.login-controls {
+    float: right;
+    width: 200px;
+    background-color:darkslategrey;
+    height: 25px;
+    line-height: 2em;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.clear-floats {
+    clear: both;
+}
+
+#topmenu {
+    background-color: darkslategray;
+    height: 60px;
+    
+}
+
+.topmenulink {
+    float: left;
+    background-color: lightgrey;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 2em;
+    margin: 5px;
+    border-width: 3px;
+    border-style: outset;
+}
+
+.display-label {
+    display: inline-block;
+    width: 150px;
+    margin: 2px;
+}
+
+.display-field {
+    margin: 2px;
+    width: 350px;
+}
+
+.editor-label {
+    display: inline-block;
+    width: 250px;
+    margin: 2px;
+    vertical-align: top;
+}
+
+.editor-field {
+    display: inline-block;
+    width: 800px;
+    margin: 2px;
+}
+
+
+.pic-upload-input {
+    width: 200px;
+}
+
+.photo-index-card {
+    background-color:darkgrey;
+    border-color:deeppink;
+    border-width: 3px;
+    border-style: outset;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    height: 400px;
+    width: 280px;
+    float: left;
+}
+
+.photo-index-card-img {
+    width: 250px;
+    max-height: 320px;
+}
+
+.photo-metadata {
+    width: 600px; 
+    padding: 15px;
+}
+
+
+.photo-comment-body {
+    margin: 15px;
+}
+
+.field-validation-error {
+    color: #b72323;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .topmenulink {
+        width: 100px;
+    }
+}
