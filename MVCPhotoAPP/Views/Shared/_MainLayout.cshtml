@@ -1,0 +1,37 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Content/PhotoStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <h1 class="site-page-title">
+            Adventure Works Photo Sharing
+        </h1>
+        <div class="clear-floats" />
+        <div id="topmenu">
+            <nav>
+                <ul>
+                    <li class="topmenulink"><a href="#">Inicio</a></li>
+                    <li class="topmenulink"><a href="#">Quiénes somos</a></li>
+                    <li class="topmenulink"><a href="#">Servicios</a></li>
+                    <li class="topmenulink"><a href="#">Blog</a></li>
+                    <li class="topmenulink"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="breadcrumb">
+            Zona de mapa del sitio
+        </div>
+        <div>
+            @RenderBody()
+        </div>
+
+    </div>
+</body>
+</html>
